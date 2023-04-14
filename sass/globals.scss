@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+}  
+  .main-menu {
+    margin-bottom: 0;
+  }
+  .main-menu li {
+    font-weight: 500;
+    font-size: 1.2rem;
+    list-style: none;
+    display: inline;
+    margin-right: 2rem;
+
+  }
+  .main-menu li a {
+    text-decoration: none;
+    color: #010851;
+  }
+    .home {
+      margin-top: 7rem;
+      margin-bottom: 8rem;
+      align-items: center;
+      width: 80rem;
+      height: 30rem;
+      left: 56px;
+      top: 178px;
+      background: url('/assets/bg.png');
+      border-radius: 10px 10px 150px 10px;
+      
+      p {
+        padding: 10px;
+        color: aliceblue;
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: justify;
+      }
+    }
+    .schedule{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .info{
+      padding: 10px;
+      color: #010851;
+      h1{
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      p{
+        font-weight: 100;
+      }
+    }
+    .home-2{
+      display: inline-flex;
+      align-items: center;
+
+      img{
+        right: 40rem;
+        width: 40rem;
+        height: 30rem;
+      }
+    }
+    .info-home-2{
+      display: inline;
+      color: #010851;
+      h1{
+        font-weight: 800;
+      }
+    }
+    .home-3{
+      @extend .home-2;
+      .info-home-3{
+        @extend .info-home-2;
+      }
+    }
+    .plans{
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+   .text-plans{
+    text-align: center;
+   }
+   .student-part{
+    @extend .home;
+    h1{
+      font-size: 4rem;
+    }
+    button{
+      justify-content: center;
+      margin-top: 5rem;
+    }
+   }
+   footer {
+    background-color: #010851;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    border-bottom: solid 1px #ddd;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: aliceblue;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    html{
+      font-size: 1rem;
+      flex-direction: column;
+    }
+  }
