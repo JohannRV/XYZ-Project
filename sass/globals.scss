@@ -148,11 +148,10 @@
     text-decoration: none;
     font-weight: 100;
     font-size: 0.9rem;
-  }
-  
-  @media (max-width: 768px) {
-    html{
-      font-size: 1rem;
-      flex-direction: column;
+    &:hover{
+      color: aliceblue;
     }
   }
+  
+  
+  
